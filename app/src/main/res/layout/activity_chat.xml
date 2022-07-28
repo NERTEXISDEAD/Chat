@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/linearLayout"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background1" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -21,23 +22,28 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginBottom="5dp"
-        android:weightSum="100">
+        android:weightSum="100"
+        >
 
         <EditText
             android:id="@+id/messageBox"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:hint="Напишите сообщение"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="85"
             android:background="@drawable/message_box_background"
+            android:hint="Напишите сообщение"
             android:paddingLeft="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="85"/>
+            />
+
         <ImageView
             android:id="@+id/sentButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/send"
             android:layout_weight="20"/>
+
 
 
     </LinearLayout>
